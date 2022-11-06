@@ -59,4 +59,7 @@ jobs:
             -input=false \
             -no-color \
             -detailed-exitcode
-           exitcode=$?
+          exitcode=$?
+          echo $exitcode
+          exit $exitcode
+          
