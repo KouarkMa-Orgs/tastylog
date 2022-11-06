@@ -10,9 +10,9 @@ resource "aws_ecs_cluster" "webapp" {
   }
 
   tags = {
-    Name = "${var.project}-${var.environment}-webapp-cluster"
+    Name    = "${var.project}-${var.environment}-webapp-cluster"
     Project = var.project
-    Env = var.environment
+    Env     = var.environment
   }
 }
 
