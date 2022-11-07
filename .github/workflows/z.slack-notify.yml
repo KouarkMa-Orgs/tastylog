@@ -16,6 +16,7 @@ jobs:
             {
               "attachments": [
                 {
+                  "color": "#0068B7",
                   "blocks": [
                     {
                       "type": "header",
@@ -26,13 +27,11 @@ jobs:
                       }
                     },
                     {
-                      "type": "context",
-                      "elements": [
-                        {
-                          "type": "mrkdwn",
-                          "text": "*Hello world!"
-                        }
-                      ]
+                      "type": "section",
+                      "text": {
+                        "type": "mrkdwn",
+                        "text": "Hello World :ghost:"
+                      }
                     }
                   ]
                 }
