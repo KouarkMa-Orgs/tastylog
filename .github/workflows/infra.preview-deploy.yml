@@ -121,9 +121,9 @@ jobs:
       - name: Terraform validate
         run: |
           terraform validate -no-color
-      - name: Terraform aplly
+      - name: Terraform apply
         run: |
-          terraform plan \
+          terraform apply \
             -var 'project=${{ env.TF_PROJECT }}' \
             -var 'environment=${{ env.TF_ENVIRONMENT }}' \
             -var 'username=${{ secrets.MYSQL_USERNAME }}' \
