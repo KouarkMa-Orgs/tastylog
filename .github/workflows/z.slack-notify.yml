@@ -29,11 +29,6 @@ jobs:
                       "type": "context",
                       "elements": [
                         {
-                          "type": "image",
-                          "image_url": "https://pbs.twimg.com/profile_images/625633822235693056/lNGUneLX_400x400.jpg",
-                          "alt_text": "cute cat"
-                        },
-                        {
                           "type": "mrkdwn",
                           "text": "*Hello world!"
                         }
@@ -43,5 +38,5 @@ jobs:
                 }
               ]
             }
-          env:
-            SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
