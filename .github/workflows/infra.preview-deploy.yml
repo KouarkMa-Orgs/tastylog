@@ -52,7 +52,7 @@ jobs:
         run: |
           terraform validate -no-color
       - name: Terraform plan
-        continue-on-erro: true
+        continue-on-error: true
         id: terraform_plan
         run: |
           terraform plan \
